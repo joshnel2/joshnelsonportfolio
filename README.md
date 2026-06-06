@@ -1,4 +1,4 @@
-# Josh Nelson — AI Consulting Portfolio
+# Josh Nelson — AI Strategist Portfolio
 
 A dead-simple static portfolio. Open `index.html` or serve the folder:
 
