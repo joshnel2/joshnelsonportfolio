@@ -43,6 +43,7 @@
   .item .idx{color:var(--muted);font-size:12px;}
   .item h3{font-size:15px;font-weight:600;margin:2px 0 8px;}
   .item p{margin-bottom:10px;}
+  .label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin:16px 0 6px;}
   .row{display:flex;font-size:13px;color:var(--muted);padding:2px 0;}
   .row .k{width:88px;flex:0 0 88px;text-transform:uppercase;letter-spacing:0.06em;}
   .row .v{flex:1;color:var(--fg);}
@@ -66,16 +67,41 @@
   <div class="item">
     <div class="idx">[01]</div>
     <h3>Dorf Nelson &amp; Zauderer LLP</h3>
-    <p>For a New York law firm, I rebuilt their website and built private
-       money tools the owner logs into to see the firm's finances.</p>
+    <p>For a New York law firm, I rebuilt their website and built a private
+       billing portal — one secure login where the owner sees the whole
+       financial picture of the firm. It updates from their QuickBooks and
+       Clio exports, so the numbers are always current.</p>
+
+    <div class="label">Inside the billing portal</div>
     <ul>
-      <li>Built a billing portal — one private login where the owner sees who owes the firm, how old each unpaid bill is, and what's been collected</li>
-      <li>Built an A/R and origination calculator — it figures out which attorney gets credit for each payment and splits the money correctly</li>
-      <li>Rebuilt the public website — attorney pages, practice areas, news</li>
-      <li>Got the firm to show up in AI search — so when people ask ChatGPT, Google AI, or Perplexity for a top litigator, the firm comes up</li>
+      <li>Overview — cash on hand, total owed to the firm, revenue and profit for the year, all on one screen</li>
+      <li>Who owes money — every unpaid bill sorted by how overdue it is (current, 1–30, 31–60, 61–90, 90+ days)</li>
+      <li>Oldest unpaid bills — the top 25 most overdue accounts, so the firm knows who to chase first</li>
+      <li>By originating attorney — how much each attorney's clients owe, and how much of that is overdue</li>
+      <li>Profit &amp; loss — income, expenses, profit margin, and biggest expense categories</li>
+      <li>Partner distributions — what each partner has drawn for the year and their share of the pool</li>
+      <li>Cash &amp; balance sheet — bank balances, assets, and what the firm owes</li>
+      <li>Bills to pay — vendor bills owed by the firm, sorted by how overdue they are</li>
+      <li>Work in progress — time worked but not yet billed (hours and dollar value)</li>
+      <li>Top clients — biggest clients by revenue and their share of the book</li>
     </ul>
+
+    <div class="label">The origination calculator</div>
+    <ul>
+      <li>Reads each payment that comes in and splits it across the right attorneys using the firm's own commission rules</li>
+      <li>Spits out a clean Excel workbook — one tab per billing attorney — ready to hand off</li>
+    </ul>
+
+    <div class="label">Also built</div>
+    <ul>
+      <li>Upload &amp; auto-update — drop in the QuickBooks/Clio reports and the portal refreshes itself, with plain-English insights written up after each upload</li>
+      <li>Rebuilt the public website — attorney pages, practice areas, news</li>
+      <li>Got the firm to show up in AI search — when people ask ChatGPT, Google AI, or Perplexity for a top litigator, the firm comes up</li>
+      <li>Everything is encrypted and owner-only — data unlocks in the browser after login</li>
+    </ul>
+
     <div class="row"><div class="k">For</div><div class="v">Dorf Nelson &amp; Zauderer (law firm)</div></div>
-    <div class="row"><div class="k">Built</div><div class="v">Website, billing portal, payment calculator, AI search</div></div>
+    <div class="row"><div class="k">Built</div><div class="v">Billing portal, origination calculator, website, AI search</div></div>
     <div class="row"><div class="k">Live</div><div class="v"><a href="https://dorflaw.com" target="_blank" rel="noopener">dorflaw.com</a></div></div>
   </div>
 
