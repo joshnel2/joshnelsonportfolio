@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josh Nelson — AI Consulting</title>
+<meta name="description" content="Josh Nelson. AI consulting. Selected work.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#111111;
+    --muted:#666666;
+    --line:#dddddd;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:"SFMono-Regular",ui-monospace,Menlo,Consolas,"Courier New",monospace;
+    font-size:15px;
+    line-height:1.6;
+    padding:48px 20px;
+    max-width:760px;
+    margin:0 auto;
+  }
+  a{color:var(--fg);text-decoration:underline;text-underline-offset:2px;}
+  a:hover{background:var(--fg);color:var(--bg);text-decoration:none;}
+  header{border-bottom:1px solid var(--fg);padding-bottom:16px;margin-bottom:32px;}
+  h1{font-size:18px;font-weight:600;letter-spacing:0.02em;}
+  .sub{color:var(--muted);margin-top:4px;}
+  .meta{color:var(--muted);font-size:13px;margin-top:12px;}
+  section{margin-bottom:32px;}
+  h2{
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--muted);
+    margin-bottom:16px;
+  }
+  .item{border:1px solid var(--line);padding:18px 18px;margin-bottom:14px;}
+  .item .idx{color:var(--muted);font-size:12px;}
+  .item h3{font-size:15px;font-weight:600;margin:2px 0 8px;}
+  .item p{margin-bottom:10px;}
+  .row{display:flex;font-size:13px;color:var(--muted);padding:2px 0;}
+  .row .k{width:88px;flex:0 0 88px;text-transform:uppercase;letter-spacing:0.06em;}
+  .row .v{flex:1;color:var(--fg);}
+  ul{list-style:none;margin:8px 0 0;}
+  ul li{padding-left:16px;position:relative;}
+  ul li::before{content:"-";position:absolute;left:0;color:var(--muted);}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:var(--muted);font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>JOSH NELSON</h1>
+  <div class="sub">AI Consulting</div>
+  <div class="meta">Applied AI, search optimization, and web systems for businesses.</div>
+</header>
+
+<section>
+  <h2>Selected Work</h2>
+
+  <div class="item">
+    <div class="idx">[01]</div>
+    <h3>Dorf Nelson &amp; Zauderer LLP</h3>
+    <p>AI search optimization (generative engine optimization) and full website
+       rebuild for a New York commercial litigation firm. Structured JSON-LD
+       schema so the firm and its attorneys surface accurately in AI search
+       answers — ChatGPT, Perplexity, Google AI Overviews, and Gemini.</p>
+    <ul>
+      <li>Person + LegalService schema positioning attorneys for high-intent AI queries</li>
+      <li>Static site rebuild: attorney bios, practice areas, insights, admin panel</li>
+      <li>Performance: asset preloading, optimized CSS delivery</li>
+    </ul>
+    <div class="row"><div class="k">Role</div><div class="v">AI consultant / build</div></div>
+    <div class="row"><div class="k">Stack</div><div class="v">HTML, CSS, JSON-LD schema</div></div>
+    <div class="row"><div class="k">Live</div><div class="v"><a href="https://dorflaw.com" target="_blank" rel="noopener">dorflaw.com</a></div></div>
+  </div>
+
+  <div class="item">
+    <div class="idx">[02]</div>
+    <h3>All Sportz Apparel</h3>
+    <p>Redesigned marketing site plus a full backend for a US-owned custom team
+       uniform manufacturer with nearshore production. Static front end paired
+       with a serverless API and an encrypted admin dashboard.</p>
+    <ul>
+      <li>Multi-page site: capabilities, factory, sports, customers, contact</li>
+      <li>Azure Functions API: auth/login, dashboard, support, comments, file uploads, SQL</li>
+      <li>Encrypted admin panel; Vercel deployment with clean URLs and caching</li>
+    </ul>
+    <div class="row"><div class="k">Role</div><div class="v">AI consultant / build</div></div>
+    <div class="row"><div class="k">Stack</div><div class="v">HTML, CSS, JS, Azure Functions, SQL</div></div>
+    <div class="row"><div class="k">Repo</div><div class="v"><a href="https://github.com/joshnel2/allsportzapparel-site" target="_blank" rel="noopener">github.com/joshnel2/allsportzapparel-site</a></div></div>
+  </div>
+
+</section>
+
+<footer>
+  <div>github.com/joshnel2</div>
+  <div id="yr"></div>
+</footer>
+
+<script>document.getElementById('yr').textContent='© '+new Date().getFullYear()+' Josh Nelson';</script>
+</body>
+</html>
